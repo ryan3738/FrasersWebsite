@@ -177,16 +177,21 @@ img {
   margin: 0 auto 4rem auto;
 }
 
-.menu-section-items {
+.menu-section-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
   grid-gap: 20px;
-  justify-items: center;
-  align-items: start;
+  justify-content: center;
+  align-content: center;
   /* justify-content: space-evenly;
   flex-wrap: wrap;
   flex-basis: 10em; */
   line-height: 1.5em;
+}
+
+.menu-item {
+  text-align: center;
+  padding: 5px;
 }
 
 .contact-section {

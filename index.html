@@ -7,7 +7,261 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Frasers Gourmet Hideaway</title>
-      <link rel="stylesheet" href="style.css">
+      <!-- <link rel="stylesheet" href="style.css"> -->
+      <style>
+      :root {
+  --main-gold: #beac74;
+  --main-header: rgba(0, 0, 0, 0.9);
+  --background-1: #171717;
+  --background-2: #1f1f1f;
+  --main-white: #ffffff;
+  --main-text2: ;
+}
+
+/* Test change */
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-gold);
+  text-align: center;
+  background-color: #000000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-gold);
+}
+
+img {
+  display: block;
+  /* width: auto; */
+}
+
+.spaced-text {
+  letter-spacing: 0.5em;
+}
+
+.header-logo {
+  height: 60px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-flow: row wrap; */
+  position: fixed;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--background-1);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 75 px;
+  flex-direction: row;
+}
+.nav-list a {
+  display: block;
+  font-size: 4.5rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background: var(--main-white);
+}
+.welcome-background {
+  margin-top: 3.8em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  width: 100%;
+  height: 120vh;
+  background-image: url("http://frasersgh.com/images/gallary/fr_0276.jpg");
+}
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  /* padding: 70px 5px; */
+  width: 100%;
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://frasersgh.com/images/gallary/fr_0276.jpg");
+}
+
+.welcome-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  background-color: var(--main-header);
+}
+.welcome-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 0.2rem solid var(--main-gold);
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+  margin: 3rem;
+  background-color: var(--main-header);
+}
+.menu-section {
+  text-align: center;
+  padding: 2rem 2rem;
+  background: var(--background-1);
+}
+
+.menu-section-header {
+  display: inline-block;
+  max-width: 640px;
+  margin: 0 auto 4rem auto;
+}
+
+.menu-section-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
+  grid-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  /* justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-basis: 10em; */
+  line-height: 1.5em;
+}
+
+.menu-item {
+  text-align: center;
+  padding: 5px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  padding: 0 2rem;
+  background: var(--background-2);
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 980px;
+  margin-top: 4rem;
+  /* flex-wrap: wrap; */
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+/* 
+Responsive Rules
+*/
+
+/* @media (max-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 980px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 55%;
+  }
+} */
+
+      </style>
    </head>
    <body>
       <nav id="navbar" class="nav">
@@ -66,65 +320,65 @@
          <h2 class="menu-section-header">
             STARTERS
          </h2>
-         <div class="menu-section-items">
-         <div>
+         <div class="menu-section-container">
+         <div class="menu-item">
             <p><b>Warm Goat Cheese Salad</b></p>
             <p>Cypress Grove Aged goat cheese, arugula, cipollini onions &amp; apples<br>13</p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Caesar Salad</b><br> Chopped romaine lettuce, crispy prosciutto, fried capers,&nbsp;parmesan black olive hemp&nbsp;.<br> 10 <br><i>Add Smoked Mussels &nbsp; &nbsp;4</i></p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Young Greens </b><br> Mixed salad with pear slices, spiced pecans, gorgonzola cheese, maple bourbon vinaigrette<br> 10</p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Duck Liver Pate</b><br> Ice wine pear compote, truffle honey &amp; crostinis<br> 13
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Spicy Calamari</b><br> Fried calamari strips with chillies &amp; garlic, blue cheese dipping sauce
                <br> 14
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>&nbsp;Shrimp and Grits</b><br> Mildly spiced Tiger prawns in a Guajillo pepper sauce, fluffy cheesy grits
                <br> 14
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Samosas</b><br> Indian spiced potato and pea pastry, tamarind date and mint mango chutney
                <br> 10
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Dry Garlic Ribs</b><br> Baby back ribs, crispy garlic, blackberry mustard sauce<br> 14</p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Penn Cove Mussels </b><br> Steamed local mussels in a fragrant curry cream broth<br> 14
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Dungeness Crab Cakes</b><br> Fried crab &amp; risotto cakes, oriental slaw, wasabi sauce<br> 17
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Seafood Chowder</b><br> Northwest clams, mussels, snapper &amp; shrimp in a rich creamy stock
                <br> 10
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Beef Carpaccio</b><br> Thinly sliced raw beef tenderloin, fried capers, crispy prociutto, shaved parm, lemon truffled olive oil<br> 15
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Garlic &amp; Brie Fondue </b><br> Roasted garlic &amp; brie fondue for two, chef's selection of vegetables &amp; bread<br> 17
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b>Tomato &amp; Mozzarella</b><br> Oven roasted tomatoes, fresh mozzarella cheese, olives, basil oil &amp; balsamic reduction<br> 10
             </p>
          </div>
-         <div>
+         <div class="menu-item">
             <p><b><b>Small Green Salad </b></b><br> Mixed greens, tomatoes, cucumbers, red onion,&nbsp;blood orange vinaigrette
                <br> 7
             </p>
@@ -134,38 +388,64 @@
          <h2 class="menu-section-header">
             ENTREES
          </h2>
-         <div class="menu-section-items">
-            <p><b><b>Beef Tenderloin </b></b><br> Grilled filet mignon, wild mushroom risotto, seasonal vegetables, horseradish butter<br> 34
-            </p>
-            <p><b><b>Aged Angus Spencer Steak </b></b><br> Grilled Prime 10oz ribeye, Yukon gold potatoes, smokey blue cheese crumbles, grilled asparagus, green peppercorn sauce<br> 36
-            </p>
-            <p><b><b>Beef Short Ribs </b></b><br> Tender braised boneless short ribs, soft polenta, pickled kale, parsnip chips
-               <br> 31
-            </p>
-            <p><b><b>Pork Chop</b></b><br> Diamond Ranch Tomahawk chop, garlic mashed potatoes, wild mushroom reduction
-               <br> 30
-            </p>
-            <p><b><b>Duck Breast</b></b><br> House made Pappardelle pasta, asparagus, pine nuts, beach mushrooms, Marsala cream reduction<br> 32
-            </p>
-            <p><b><b>Chicken &amp; Waffles</b></b><br> Buttermilk fried Jadori&nbsp;chicken breast, cornbread waffle, truffle honey butter<br> 25
-            </p>
-            <p><b><b>Roasted Rack of Lamb </b></b><br> Herb &amp; pistachio crusted lamb, garlic mashed potatoes, red wine reduction
-               <br> 32
-            </p>
-            <p><b><b>Sablefish </b></b><br> Apple wood smoked &amp; poached sablefish in a saffron cream broth, dungeness crab and sweet pea risotto<br> 34
-            </p>
-            <p><b><b>Scallops</b></b><br> Seared sea scallops in sage &amp; brown butter, truffle tagliatelle&nbsp;pasta, spicy harissa oil<br> 35
-            </p>
-            <p><b><b>Red Snapper</b></b><br> Lightly hazelnut coated fillet of snapper, butternut squash &amp; purple potato saute, Frangelico beurre blanc<br> 26
-            </p>
-            <p><b><b>Surf &amp; Turf </b></b><br> Filet mignon grilled &amp; topped with a colossal prawn, sea scallop &amp; mussels, garlic mashed potatoes, balsamic demi-glace &amp; a garlic cream sauce<br> 44
-            </p>
-            <p><b>Seafood Fettuccini</b><br> Crab claws, scallops, shrimp and mussels, house made pasta, lite pesto cream
-               <br> 30
-            </p>
-            <p><b>Gnocchi Primavera</b><br> Tender Ricotta gnocchi, fresh vegetables, olives, capers and cherry tomatoes
-               <br> 24
-            </p>
+         <div class="menu-section-container">
+            <div class="menu-item">
+               <p><b><b>Beef Tenderloin </b></b><br> Grilled filet mignon, wild mushroom risotto, seasonal vegetables, horseradish butter<br> 34
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Aged Angus Spencer Steak </b></b><br> Grilled Prime 10oz ribeye, Yukon gold potatoes, smokey blue cheese crumbles, grilled asparagus, green peppercorn sauce<br> 36
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Beef Short Ribs </b></b><br> Tender braised boneless short ribs, soft polenta, pickled kale, parsnip chips
+                  <br> 31
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Pork Chop</b></b><br> Diamond Ranch Tomahawk chop, garlic mashed potatoes, wild mushroom reduction
+                  <br> 30
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Duck Breast</b></b><br> House made Pappardelle pasta, asparagus, pine nuts, beach mushrooms, Marsala cream reduction<br> 32
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Chicken &amp; Waffles</b></b><br> Buttermilk fried Jadori&nbsp;chicken breast, cornbread waffle, truffle honey butter<br> 25
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Roasted Rack of Lamb </b></b><br> Herb &amp; pistachio crusted lamb, garlic mashed potatoes, red wine reduction
+                  <br> 32
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Sablefish </b></b><br> Apple wood smoked &amp; poached sablefish in a saffron cream broth, dungeness crab and sweet pea risotto<br> 34
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Scallops</b></b><br> Seared sea scallops in sage &amp; brown butter, truffle tagliatelle&nbsp;pasta, spicy harissa oil<br> 35
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Red Snapper</b></b><br> Lightly hazelnut coated fillet of snapper, butternut squash &amp; purple potato saute, Frangelico beurre blanc<br> 26
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b><b>Surf &amp; Turf </b></b><br> Filet mignon grilled &amp; topped with a colossal prawn, sea scallop &amp; mussels, garlic mashed potatoes, balsamic demi-glace &amp; a garlic cream sauce<br> 44
+               </p>
+            </div>
+            <div class="menu-item">
+               <p><b>Seafood Fettuccini</b><br> Crab claws, scallops, shrimp and mussels, house made pasta, lite pesto cream
+                  <br> 30
+               </p>
+            </div>
+           <div class="menu-item">
+               <p><b>Gnocchi Primavera</b><br> Tender Ricotta gnocchi, fresh vegetables, olives, capers and cherry tomatoes
+                  <br> 24
+               </p>
+           </div>
          </div>
       </section>
       <section class="welcome-section">
