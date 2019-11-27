@@ -231,12 +231,12 @@ Responsive Rules
 
 @media (max-width: 980px) {
   html {
-    font-size: 60%;
+    font-size: 58%;
   }
 }
 
 @media (max-width: 460px) {
   html {
-    font-size: 80%;
+    font-size: 55%;
   }
 }
