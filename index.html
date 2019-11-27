@@ -2,265 +2,16 @@
    Sample Frasers Gourmet Hideaway Site
    This is test text
    -->
+<!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Frasers Gourmet Hideaway</title>
-      <!-- <link rel="stylesheet" href="style.css"> -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Frasers Gourmet Hideaway</title>
+   <link rel="stylesheet" href="style.css">
       <style>
-      :root {
-  --main-gold: #beac74;
-  --main-header: rgba(0, 0, 0, 0.9);
-  --background-1: #171717;
-  --background-2: #1f1f1f;
-  --main-white: #ffffff;
-  --main-text2: ;
-}
-
-/* Test change */
-
-/* Base reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.4;
-  color: var(--main-gold);
-  text-align: center;
-  background-color: #000000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-}
-
-h1,
-h2 {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 4.2rem;
-}
-h3 {
-  font-size: 3rem;
-}
-h4 {
-  font-size: 2.1rem;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--main-gold);
-}
-
-img {
-  display: block;
-  /* width: auto; */
-}
-
-.spaced-text {
-  letter-spacing: 0.5em;
-}
-
-.header-logo {
-  height: 60px;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-evenly;
-  /* flex-flow: row wrap; */
-  position: fixed;
-  flex-wrap: wrap;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--background-1);
-  z-index: 10;
-}
-
-.nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  height: 75 px;
-  flex-direction: row;
-}
-.nav-list a {
-  display: block;
-  font-size: 4.5rem;
-  padding: 2rem;
-}
-
-.nav-list a:hover {
-  background: var(--main-white);
-}
-.welcome-background {
-  margin-top: 3.8em;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-  width: 100%;
-  height: 120vh;
-  background-image: url("http://frasersgh.com/images/gallary/fr_0276.jpg");
-}
-.welcome-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  /* padding: 70px 5px; */
-  width: 100%;
-  height: 120vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("http://frasersgh.com/images/gallary/fr_0276.jpg");
-}
-
-.welcome-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  box-sizing: border-box;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  max-width: 350px;
-  background-color: var(--main-header);
-}
-.welcome-box div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  box-sizing: border-box;
-  overflow: hidden;
-  border: 0.2rem solid var(--main-gold);
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  padding: 3rem;
-  margin: 3rem;
-  background-color: var(--main-header);
-}
-.menu-section {
-  text-align: center;
-  padding: 2rem 2rem;
-  background: var(--background-1);
-}
-
-.menu-section-header {
-  display: inline-block;
-  max-width: 640px;
-  margin: 0 auto 4rem auto;
-}
-
-.menu-section-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
-  grid-gap: 20px;
-  justify-content: center;
-  align-content: center;
-  /* justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex-basis: 10em; */
-  line-height: 1.5em;
-}
-
-.menu-item {
-  text-align: center;
-  padding: 5px;
-}
-
-.contact-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 60vh;
-  padding: 0 2rem;
-  background: var(--background-2);
-}
-.contact-links {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  max-width: 980px;
-  margin-top: 4rem;
-  /* flex-wrap: wrap; */
-}
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 2px;
-}
-.contact-details {
-  font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
-  transition: transform 0.3s ease-out;
-}
-
-.contact-details:hover {
-  transform: translateY(8px);
-}
-
-/* 
-Responsive Rules
-*/
-
-/* @media (max-width: 1200px) {
-  html {
-    font-size: 62.5%;
-  }
-}
-
-@media (max-width: 980px) {
-  html {
-    font-size: 58%;
-  }
-}
-
-@media (max-width: 460px) {
-  html {
-    font-size: 55%;
-  }
-} */
-
+      
       </style>
    </head>
    <body>
@@ -278,7 +29,7 @@ Responsive Rules
                </a>
             </li>
             <li>
-               <a href="#starters" class="nav-link">MENU</a>
+               <a href="#menu" class="nav-link">MENU</a>
             </li>
             <li>
                <a href="#contact" class="nav-link">CONTACT</a>
@@ -289,18 +40,18 @@ Responsive Rules
          <!-- <div class="welcome-background"> -->
          <div class="welcome-box">
             <div>
-               <p class="spaced-text">Est. | 2006<br></p>
-               <h1>Frasers</h1>
-               <h4>Home of exquisite tastes and service<br><br></h4>
-               <p>
-                  191 SE Dock St #101<br>
-               </p>
-               Oak Harbor, WA 98277</p> 360-279-1231
-               <br><br></p> Tue - Sat / 4:30PM to 9:30PM<br><br></rb></p> Sun - Mon / Closed<br></p>
-               </p>
-            </div>
-         </div>
-         <!-- </div> -->
+                                 <p class="spaced-text">Est. | 2006<br><br></p>
+                                 <h1>Frasers<br><br></h1>
+                                 <h4>Home of exquisite tastes and service<br><br></h4>
+                                 <p>
+                                    191 SE Dock St #101<br>
+                                 </p>
+                                 Oak Harbor, WA 98277</p> 360-279-1231
+                                 <br><br></p> Tue - Sat / 4:30PM to 9:30PM<br><br></rb></p> Sun - Mon / Closed<br></p>
+                                 </p>
+                              </div>
+                           </div>
+                           <!-- </div> -->
       </section>
       <section id="about" class="menu-section">
          <h2 class="menu-section-header">
@@ -316,7 +67,7 @@ Responsive Rules
          <p>Scott Fraser has a creative palette that takes food beyond the expected to expand a guest's experience- all of this paired with fabulous, vibrant Northwest and West Coast wines.</p>
          <p>This restaurant has been labeled a gourmet hideaway for a reason-once you find it, you too will know it is a rare culinary jewel.</p>
       </section>
-      <section id="starters" class="menu-section">
+      <section id="menu" class="menu-section">
          <h2 class="menu-section-header">
             STARTERS
          </h2>

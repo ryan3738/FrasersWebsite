@@ -28,40 +28,33 @@ html {
    * default document font size = 16px, 1rem = 16px, 100% = 16px
    * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
   */
-  font-size: 62.5%;
+  font-size: 100%;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.4em;
   color: var(--main-gold);
   text-align: center;
   background-color: #000000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-h1,
-h2 {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
 h1 {
-  font-size: 6rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 2rem;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 h4 {
-  font-size: 2.1rem;
+  font-size: 1rem;
 }
 
 ul {
@@ -102,19 +95,27 @@ img {
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  height: 75 px;
+  align-items: center;
+  /* justify-items: center; */
+  height: 100px;
   flex-direction: row;
 }
-.nav-list a {
+
+.nav-list .nav-link {
   display: block;
-  font-size: 4.5rem;
-  padding: 2rem;
+  font-size: 1.2em;
+  padding: 1em;
+}
+.nav-list img {
+  display: block;
+  font-size: 1.2em;
+  margin: 0.5rem;
 }
 
 .nav-list a:hover {
   background: var(--main-white);
 }
-.welcome-background {
+/* .welcome-background {
   margin-top: 3.8em;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,12 +125,13 @@ img {
   width: 100%;
   height: 120vh;
   background-image: url("http://frasersgh.com/images/gallary/fr_0276.jpg");
-}
+} */
 .welcome-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: flex-end;
   flex-flow: row;
+  margin-top: 75px;
   /* padding: 70px 5px; */
   width: 100%;
   height: 120vh;
@@ -141,28 +143,29 @@ img {
 .welcome-box {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  box-sizing: border-box;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  max-width: 350px;
+  align-content: center;
+  flex-direction: row;
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
+  width: 50%;
+  height: 50%;
+  margin: 2%;
+  /* max-width: 350px; */
   background-color: var(--main-header);
 }
 .welcome-box div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   flex-flow: column;
   box-sizing: border-box;
-  overflow: hidden;
-  border: 0.2rem solid var(--main-gold);
-  max-width: 300px;
+  /* overflow: hidden; */
+  border: thin solid var(--main-gold);
+  /* max-width: 300px; */
   width: 100%;
   height: auto;
-  padding: 3rem;
-  margin: 3rem;
+  padding: 10%;
+  margin: 10%;
   background-color: var(--main-header);
 }
 .menu-section {
@@ -232,6 +235,41 @@ img {
 Responsive Rules
 */
 
+@media (min-width: 460px) {
+  html {
+    font-size: 100%;
+  }
+  .nav {
+    background: red;
+  }
+}
+
+@media (min-width: 980px) {
+  html {
+    font-size: 115%;
+  }
+  .nav {
+    background: yellow;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 130%;
+  }
+  .nav {
+    background: pink;
+  }
+}
+
+@media (min-width: 1900px) {
+  html {
+    font-size: 3vh;
+  }
+  .nav {
+    background: pink;
+  }
+}
 /* @media (max-width: 1200px) {
   html {
     font-size: 62.5%;
