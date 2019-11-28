@@ -103,7 +103,7 @@ img {
 
 .nav-list .nav-link {
   display: block;
-  font-size: 1.2em;
+  font-size: 1.0em;
   padding: 1em;
 }
 .nav-list img {
@@ -147,7 +147,7 @@ img {
   flex-direction: row;
   /* box-sizing: border-box; */
   /* overflow: hidden; */
-  width: 50%;
+  width: 80%;
   height: 50%;
   margin: 2%;
   /* max-width: 350px; */
