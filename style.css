@@ -148,7 +148,7 @@ img {
   /* box-sizing: border-box; */
   /* overflow: hidden; */
   width: 80%;
-  height: 50%;
+  height: auto;
   margin: 2%;
   /* max-width: 350px; */
   background-color: var(--main-header);
