@@ -34,32 +34,61 @@ html {
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4em;
+  /* font-size: 1rem; */
+  /* font-weight: 400; */  
+  /* line-height: 1.4em; */
+  /* New scalable text using modular scale
+  https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
+  
+  font-size: calc(12px + 0.35vw);
+  line-height: calc(12px + 1.05vw);
   color: var(--main-gold);
   text-align: center;
   background-color: #000000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
+.main-container {
+  width: 100%; /* For small screens */
+  max-width: 1140px; /* For large screens */
+  margin: auto; /* Center the container in the viewport */
+}
+
+/* 
+The old CSS
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem;}
+h4 { font-size: 1rem;} */
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.912em;
+  line-height: calc(18px + 1.8vw); /* Responsive Vertical Rhythm */
 }
 
 h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-h4 {
-  font-size: 1rem;
+  font-size: 1.616em;
+  line-height: calc(18px + 1vw); /* Responsive Vertical Rhythm */
 }
 
-ul {
-  list-style: none;
+h3 {
+  font-size: 1.471em;
+  line-height: calc(18px + 0.7vw); /* Responsive Vertical Rhythm */
 }
+
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.243em; }
+h6 { font-size: 1.132em; }
+
+h4, h5, h6 { 
+  line-height: calc(18px + .2vw); /* Responsive Vertical Rhythm */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: calc(12px + 1.05vw) 0; /* Responsive margins */
+}
+
+ul { list-style: none;}
 
 a {
   text-decoration: none;
@@ -103,7 +132,7 @@ img {
 
 .nav-list .nav-link {
   display: block;
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
   padding: 1em;
 }
 .nav-list img {
