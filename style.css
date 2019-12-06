@@ -95,7 +95,7 @@ img {
 .main-container {
   height: 100%;
   display: grid;
-  grid-gap: 0.5em;
+  /* grid-gap: 0.5em; */
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 4em auto 4em;
   grid-template-areas:
@@ -240,7 +240,7 @@ img {
 
 .menu-section-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
   justify-content: center;
   align-content: center;
@@ -257,6 +257,18 @@ img {
 
 .footer {
   grid-area: f;
+  background: var(--background-1);
+  /* position: sticky;
+  bottom: 0; */
+
+  /* display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-rows: 10em;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center; */
 }
 
 .contact-section {
@@ -275,16 +287,21 @@ img {
   width: 100%;
   height: auto;
   max-width: 980px;
-  margin-top: 4rem;
+  /* padding: 4em; */
+  /* margin-top: 1rem; */
   /* flex-wrap: wrap; */
 }
+
+.contact-links div {
+  padding: 1.5em;
+}
+
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 2px;
 }
 .contact-details {
-  font-size: 2.4rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
