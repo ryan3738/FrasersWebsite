@@ -35,7 +35,7 @@ html {
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   /* New scalable text using modular scale
-  https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */  
+  https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
   font-size: calc(12px + 0.35vw);
   line-height: calc(12px + 1.05vw);
   color: var(--main-gold);
@@ -46,9 +46,15 @@ body {
 }
 
 .main-container {
-  width: 100%; /* For small screens */
-  max-width: 1140px; /* For large screens */
-  margin: auto; /* Center the container in the viewport */
+  height: 100vh;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px auto 40px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
 }
 
 /* 
@@ -73,19 +79,34 @@ h3 {
   line-height: calc(18px + 0.7vw); /* Responsive Vertical Rhythm */
 }
 
-h4 { font-size: 1.3em; }
-h5 { font-size: 1.243em; }
-h6 { font-size: 1.132em; }
-
-h4, h5, h6 { 
-  line-height: calc(18px + .2vw); /* Responsive Vertical Rhythm */
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1.243em;
+}
+h6 {
+  font-size: 1.132em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h4,
+h5,
+h6 {
+  line-height: calc(18px + 0.2vw); /* Responsive Vertical Rhythm */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: calc(12px + 1.05vw) 0; /* Responsive margins */
 }
 
-ul { list-style: none;}
+ul {
+  list-style: none;
+}
 
 a {
   text-decoration: none;
@@ -153,6 +174,10 @@ img {
   height: 120vh;
   background-image: url("http://frasersgh.com/images/gallary/fr_0276.jpg");
 } */
+.content {
+  grid-area: c;
+}
+
 .welcome-section {
   display: flex;
   justify-content: center;
@@ -222,6 +247,10 @@ img {
 .menu-item {
   text-align: center;
   padding: 5px;
+}
+
+.footer {
+  grid-area: f;
 }
 
 .contact-section {
@@ -298,4 +327,3 @@ Responsive Rules
   }
 } 
 */
-
