@@ -75,11 +75,11 @@ h3,
 h4,
 h5,
 h6 {
-  margin: calc(12px + 1.05vw) 0; /* Responsive margins */
+  margin: calc(12px + 1.05vw) 0; Responsive margins
 }
 
 ul {
-  list-style: none;
+  /* list-style: none;/ */
 }
 
 a {
@@ -109,7 +109,6 @@ img {
   grid-area: h;
   position: sticky;
   top: 0;
-
   display: grid;
   /* grid-gap: 5px; */
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
@@ -185,10 +184,12 @@ img {
 }
 
 .welcome-section {
-  display: flex;
+
+  display: grid;
   justify-content: center;
   align-content: center;
-  flex-flow: row;
+  grid-template-columns: 1vw auto 1vw;
+  grid-template-rows: 10vh auto 40vh;
   /* margin-top: 4em; */
   /* padding: 70px 5px; */
   width: 100vw;
@@ -199,29 +200,31 @@ img {
 }
 
 .welcome-box {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* flex-direction: row; */
   /* box-sizing: border-box; */
   /* overflow: hidden; */
-  width: auto;
-  height: auto;
-  margin: 2%;
+  /* width: auto; */
+  /* height: auto; */
+  /* margin: 2%; */
   /* max-width: 350px; */
+  grid-column: 2/3;
+  grid-row: 2/3;
   background-color: var(--main-header);
 }
 .welcome-box div {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-content: center;
-  flex-flow: column;
+  flex-flow: column; */
   box-sizing: border-box;
   /* overflow: hidden; */
   border: thin solid var(--main-gold);
   /* max-width: 300px; */
-  width: auto;
-  height: auto;
+  /* width: auto; */
+  /* height: auto; */
   padding: 10%;
   margin: 10%;
   background-color: var(--main-header);
@@ -242,7 +245,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   /* justify-content: space-evenly;
   flex-wrap: wrap;
