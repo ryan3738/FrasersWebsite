@@ -21,7 +21,7 @@
 }
 
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   scroll-behavior: auto;
 }
 
@@ -119,9 +119,7 @@ img {
   justify-items: center;
 }
 
-.spaced-text {
-  letter-spacing: 0.5em;
-}
+
 
 .header-logo {
   height: 2.5em;
@@ -229,6 +227,34 @@ img {
   margin: 10%;
   background-color: var(--main-header);
 }
+
+.title {
+  font-size: 3em;
+  color: var(--main-white);
+}
+
+.spaced-text {
+  letter-spacing: 0.5em;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* grid-template-rows: ; */
+  grid-row-gap: 10%;
+  grid-column-gap: 1%;
+  /* grid-auto-rows: 200px; */
+  justify-content: space-around;
+  align-content: center;
+  place-items: center;
+}
+
+.about-container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .menu-section {
   text-align: center;
   padding: 2rem 2rem;
@@ -238,7 +264,7 @@ img {
 .menu-section-header {
   display: inline-block;
   max-width: 640px;
-  margin: 0 auto 4rem auto;
+  /* margin: 0 auto 4rem auto; */
 }
 
 .menu-section-container {
@@ -247,10 +273,6 @@ img {
   grid-gap: 20px;
   justify-content: space-around;
   align-content: center;
-  /* justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex-basis: 10em; */
-  /* line-height: 1.5em; */
 }
 
 .menu-item {
