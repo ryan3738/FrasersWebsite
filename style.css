@@ -48,9 +48,10 @@ h2 {
   line-height: calc(18px + 1vw); /* Responsive Vertical Rhythm */
 }
 
+/* Responsive Vertical Rhythm */
 h3 {
   font-size: 1.471em;
-  line-height: calc(18px + 0.7vw); /* Responsive Vertical Rhythm */
+  line-height: calc(18px + 0.7vw); 
 }
 
 h4 {
@@ -63,11 +64,14 @@ h6 {
   font-size: 1.132em;
 }
 
+/* Responsive Vertical Rhythm */
 h4,
 h5,
 h6 {
-  line-height: calc(18px + 0.2vw); /* Responsive Vertical Rhythm */
+  line-height: calc(18px + 0.2vw); 
 }
+
+/*Responsive margins*/
 
 h1,
 h2,
@@ -75,12 +79,11 @@ h3,
 h4,
 h5,
 h6 {
-  margin: calc(12px + 1.05vw) 0; Responsive margins
+  margin: calc(12px + 1.05vw) 0; 
 }
-
-ul {
-  /* list-style: none;/ */
-}
+/* ul {
+  list-style: none;/
+} */
 
 a {
   text-decoration: none;
