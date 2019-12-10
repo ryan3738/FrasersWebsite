@@ -191,6 +191,10 @@ img {
   align-content: center;
   grid-template-columns: 1vw auto 1vw;
   grid-template-rows: 10vh auto 40vh;
+  grid-template-areas:
+    ". . ."
+    ". w ."
+    ". . .";
   /* margin-top: 4em; */
   /* padding: 70px 5px; */
   width: 100vw;
@@ -211,8 +215,7 @@ img {
   /* height: auto; */
   /* margin: 2%; */
   /* max-width: 350px; */
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-area: w;
   background-color: var(--main-header);
 }
 .welcome-box div {
