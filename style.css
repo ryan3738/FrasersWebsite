@@ -188,7 +188,8 @@ img {
     "c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2"
     "c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3"
     "c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4"
-    "c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5";
+    "c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5"
+    "c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6";
 }
 
 .welcome-section {
@@ -360,6 +361,10 @@ img {
   align-content: center;
   align-items: center;
   justify-items: center; */
+}
+
+#contact {
+  grid-area: c6;
 }
 
 .contact-section {
