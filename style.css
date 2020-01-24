@@ -51,7 +51,7 @@ h2 {
 /* Responsive Vertical Rhythm */
 h3 {
   font-size: 1.471em;
-  line-height: calc(18px + 0.7vw); 
+  line-height: calc(18px + 0.7vw);
 }
 
 h4 {
@@ -68,7 +68,7 @@ h6 {
 h4,
 h5,
 h6 {
-  line-height: calc(18px + 0.2vw); 
+  line-height: calc(18px + 0.2vw);
 }
 
 /*Responsive margins*/
@@ -79,7 +79,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: calc(12px + 1.05vw) 0; 
+  margin: calc(12px + 1.05vw) 0;
 }
 /* ul {
   list-style: none;/
@@ -122,8 +122,6 @@ img {
   justify-items: center;
 }
 
-
-
 .header-logo {
   height: 2.5em;
 }
@@ -146,7 +144,6 @@ img {
   flex-wrap: wrap;
   flex-direction: row; */
   /* align-items: center; */
-  
 }
 
 .nav-link {
@@ -259,21 +256,26 @@ img {
 
 .about-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* grid-template-rows: ; */
-  grid-row-gap: 10%;
-  grid-column-gap: 1%;
-  /* grid-auto-rows: 200px; */
+  grid-template-columns: repeat(2, minmax(230px, 1fr));
+  grid-gap: 20px;
   justify-content: space-around;
   align-content: center;
-  place-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: ;
+  grid-row-gap: 10%;
+  grid-column-gap: 1%;
+  grid-auto-rows: 200px;
+  justify-content: space-around;
+  align-content: center;
+  place-items: center; */
 }
 
-.about-container > div > img {
+/* .about-container > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 #menu {
   grid-area: c3;
@@ -283,7 +285,7 @@ img {
   grid-area: c4;
 }
 
-.menu-section {
+.content-section {
   text-align: center;
   padding: 2rem 2rem;
   background: var(--background-1);
@@ -326,8 +328,8 @@ img {
   grid-area: c5;
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: 150px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 100px;
   grid-auto-flow: dense;
 }
 
@@ -346,7 +348,7 @@ img {
 
 .footer {
   grid-area: f;
-  background: var(--background-1);
+  /* background: var(--background-1); */
   /* position: sticky;
   bottom: 0; */
 
