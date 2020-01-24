@@ -182,10 +182,20 @@ img {
 } */
 .content {
   grid-area: c;
+  display: grid;
+  /* grid-gap: 0.5em; */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 120vh auto auto auto auto;
+  grid-template-areas:
+    "c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1"
+    "c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2"
+    "c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3"
+    "c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4"
+    "c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5";
 }
 
 .welcome-section {
-
+  grid-area: c1;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -197,8 +207,8 @@ img {
     ". . .";
   /* margin-top: 4em; */
   /* padding: 70px 5px; */
-  width: 100vw;
-  height: 120vh;
+  /* width: 100vw; */
+  /* height: 120vh; */
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("http://frasersgh.com/images/gallary/fr_0276.jpg");
@@ -243,6 +253,10 @@ img {
   letter-spacing: 0.5em;
 }
 
+#about {
+  grid-area: c2;
+}
+
 .about-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -259,6 +273,14 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#menu {
+  grid-area: c3;
+}
+
+#entrees {
+  grid-area: c4;
 }
 
 .menu-section {
@@ -301,17 +323,26 @@ img {
 }
 
 .gallery-container {
+  grid-area: c5;
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-auto-rows: 75px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;
 }
 
-.horizontal {}
+.horizontal {
+  grid-column: span 2;
+}
 
-.vertical {}
+.vertical {
+  grid-row: span 2;
+}
 
-.big {}
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
 
 .footer {
   grid-area: f;
