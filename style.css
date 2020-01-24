@@ -286,6 +286,33 @@ img {
   padding: 5px;
 }
 
+.gallery-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.gallery-container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 75px;
+}
+
+.horizontal {}
+
+.vertical {}
+
+.big {}
+
 .footer {
   grid-area: f;
   background: var(--background-1);
