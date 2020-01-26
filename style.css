@@ -192,7 +192,7 @@ img {
     "c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6";
 }
 
-.welcome-section {
+.welcome-container {
   grid-area: c1;
   display: grid;
   justify-content: center;
@@ -366,7 +366,6 @@ img {
 #contact {
   grid-area: c6;
 }
-
 .contact-section {
   display: flex;
   flex-direction: row;
