@@ -287,10 +287,15 @@ img {
 }
 
 .about-item {
-  padding: 10%;
+  margin: 10%;
   /* margin: 10%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: justify;
+  text-justify: justify;
   align-self: center;
-  justify-self: center;
+  justify-self: center; */
 }
 
 .about-item > img {
@@ -400,8 +405,8 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 2px;
+  /* padding: 1rem 1rem; */
+  /* border-radius: 2px; */
 }
 .contact-details {
   text-shadow: 2px 2px 1px #1f1f1f;
