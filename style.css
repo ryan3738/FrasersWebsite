@@ -183,7 +183,7 @@ img {
   display: grid;
   /* grid-gap: 0.5em; */
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 120vh auto auto auto auto;
+  grid-template-rows: 120vh repeat(5, auto);
   grid-template-areas:
     "c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1"
     "c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2"
@@ -265,17 +265,20 @@ img {
 }
 
 .about-container {
+  /* height: 100%; */
   display: grid;
-  grid-template-columns: repeat(2, minmax(50px, 600px));
-  grid-row: 8em, 100vh;
-  grid-template-areas:
-    ". h h ."
-    ". t1 p1 ."
-    ". p2 t2 ."
-    ". t3 p3 .";
-  /* grid-gap: 5%; */
   justify-content: center;
   align-content: center;
+  grid-template-columns: auto repeat(2, minmax(200px, 500px)) auto;
+  grid-row: 4em repeat(4, minmax(200px, 500px));
+  grid-template-areas:
+    
+    ". h h ."
+    ". p1 t1 ."
+    ". t2 p2 ."
+    ". p3 t3 ."
+    ". t4 t4 .";
+  /* grid-gap: 5%; */
   /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: ;
@@ -288,11 +291,33 @@ img {
 }
 
 .about-header {
-  grid-column: 1/3;
-  grid-row: 1/2;
-  padding: 4em 0 0;
+  grid-area: h;
+  padding: 3em 0 0;
 }
 
+#about-pic {
+  grid-area: p1;
+}
+
+#about-text {
+  grid-area: t1;
+}
+
+#happy-hour-pic {
+  grid-area: p2;
+}
+
+#happy-hour-text {
+  grid-area: t2;
+}
+
+#event-pic {
+  grid-area: p3;
+}
+
+#event-text {
+  grid-area: t3;
+}
 .about-item {
   margin: 15% 10%;
   text-align: left;
@@ -320,15 +345,18 @@ img {
   grid-area: c4;
 }
 
-.content-section {
+/* remove? */
+
+/* .content-section {
   text-align: center;
   padding: 2rem 2rem;
   background: var(--background-1);
-}
+} */
 
 .menu-section-header {
   display: inline-block;
   max-width: 640px;
+  padding: 3em 0 0;
   /* margin: 0 auto 4rem auto; */
 }
 
@@ -366,8 +394,8 @@ img {
   grid-area: c5;
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-auto-rows: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-auto-rows: 120px;
   grid-auto-flow: dense;
 }
 
