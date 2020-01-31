@@ -1,5 +1,5 @@
 :root {
-  --main-gold: #beac74;
+  --main-gold: #d4af37;
   --main-header: rgba(0, 0, 0, 0.9);
   --background-1: #171717;
   --background-2: #1f1f1f;
@@ -272,7 +272,6 @@ img {
   grid-template-columns: auto repeat(2, minmax(200px, 500px)) auto;
   grid-row: 4em repeat(4, minmax(200px, 500px));
   grid-template-areas:
-    
     ". h h ."
     ". p1 t1 ."
     ". t2 p2 ."
