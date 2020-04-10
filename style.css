@@ -29,8 +29,8 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   /* New scalable text using modular scale
   https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
-  font-size: calc(12px + 0.35vw);
-  line-height: calc(12px + 1.05vw);
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: var(--main-gold);
   text-align: center;
   text-justify: center;
@@ -39,36 +39,36 @@ body {
 }
 
 h1 {
-  font-size: 1.912em;
-  line-height: calc(18px + 1.8vw); /* Responsive Vertical Rhythm */
+  font-size: 2rem;
+  line-height: 2.4; /* Responsive Vertical Rhythm */
 }
 
 h2 {
-  font-size: 1.616em;
-  line-height: calc(18px + 1vw); /* Responsive Vertical Rhythm */
+  font-size: 1.8rem;
+  line-height: 2.16rem; /* Responsive Vertical Rhythm */
 }
 
 /* Responsive Vertical Rhythm */
 h3 {
-  font-size: 1.471em;
-  line-height: calc(18px + 0.7vw);
+  font-size: 1.6rem;
+  line-height: 1.92rem;
 }
 
 h4 {
-  font-size: 1.3em;
+  font-size: 1.4rem;
 }
 h5 {
-  font-size: 1.243em;
+  font-size: 1.25rem;
 }
 h6 {
-  font-size: 1.132em;
+  font-size: 1.1rem;
 }
 
 /* Responsive Vertical Rhythm */
 h4,
 h5,
 h6 {
-  line-height: calc(18px + 0.2vw);
+  line-height: 1.68rem;
 }
 
 /*Responsive margins*/
@@ -79,7 +79,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: calc(12px + 1.05vw) 0;
+  margin: 1rem 0;
 }
 /* ul {
   list-style: none;/
@@ -155,12 +155,12 @@ img {
   /* text-align: center;
   text-justify: center; */
   /* display: block;
-  font-size: 1em;
+  font-size: 1rem;
   padding: 1em; */
 }
 .nav-list img {
   /* display: block;
-  font-size: 1.0em; */
+  font-size: 1.0rem; */
   /* margin: 0.5rem; */
 }
 
@@ -252,12 +252,12 @@ img {
 }
 
 .title {
-  font-size: 3em;
+  font-size: 3rem;
   color: var(--main-white);
 }
 
 .spaced-text {
-  letter-spacing: 0.5em;
+  letter-spacing: 0.5rem;
 }
 
 #about {
@@ -284,7 +284,7 @@ img {
 
 .about-header {
   grid-area: h;
-  padding: 3em 0 0;
+  padding: 3rem 0 0;
 }
 
 #about-pic {
@@ -348,7 +348,7 @@ img {
 .menu-section-header {
   display: inline-block;
   max-width: 640px;
-  padding: 3em 0 0;
+  padding: 3rem 0 0;
   /* margin: 0 auto 4rem auto; */
 }
 
@@ -372,7 +372,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
+  font-size: 2rem;
   color: #ffeead;
 }
 
@@ -423,11 +423,11 @@ img {
 
 .contact-header {
   grid-area: h;
-  padding: 3em 0 0;
+  padding: 3rem 0 0;
 }
 
 .contact-links div {
-  padding: 1.5em;
+  padding: 1.5rem;
 }
 
 .btn {
@@ -492,7 +492,7 @@ Responsive Rules
 /* 
 @media (min-width: 980px) {
   html {
-    font-size: 115%;
+    font-size: 1.15rem;
   }
   .nav {
     background: yellow;
@@ -501,7 +501,7 @@ Responsive Rules
 
 @media (min-width: 1200px) {
   html {
-    font-size: 130%;
+    font-size: 1.3rem;
   }
   .nav {
     background: pink;
