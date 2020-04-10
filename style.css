@@ -15,18 +15,20 @@
 }
 
 /* box-sizing and font sizing */
+html {
+  box-sizing: border-box;
+  scroll-behavior: auto;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-html {
-  /* box-sizing: border-box; */
-  scroll-behavior: auto;
-}
-
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   /* New scalable text using modular scale
   https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
@@ -211,7 +213,7 @@ img {
   /* height: 120vh; */
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("http://frasersgh.com/images/gallary/fr_0276.jpg");
+  background-image: url("images/fr_0276.jpg");
 }
 
 .welcome-box {
@@ -387,7 +389,7 @@ img {
   grid-area: c5;
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   grid-auto-rows: 120px;
   grid-auto-flow: dense;
 }
