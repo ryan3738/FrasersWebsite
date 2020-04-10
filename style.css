@@ -1,9 +1,10 @@
 :root {
-  --main-gold: #b8860b;
+  --main-gold: #cdbe70;
+  /* old-gold: #b8860b; */
   --main-header: rgba(0, 0, 0, 0.9);
   --background-1: #171717;
-  --background-2: #1f1f1f;
-  --main-white: #ffffff;
+  --background-2: #1a1a1a;
+  --main-white: #f0f0f0;
   --main-text2: ;
 }
 
@@ -34,8 +35,8 @@ body {
   color: var(--main-gold);
   text-align: center;
   text-justify: center;
-  background-color: #000000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background-color: var(--background-2);
+  /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
 }
 
 h1 {
