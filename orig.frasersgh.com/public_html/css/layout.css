@@ -5,6 +5,7 @@ body {
   height: 100%;
   text-align: center;
   background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a.one:link {
@@ -63,7 +64,7 @@ img {
 
 h1 {
   color: #000000;
-  font: 2rem "Lucida Grande", Geneva, Arial, Verdana, sans-serif;
+  font: 2rem;
   font-weight: bold;
   line-height: 2.4rem;
   text-align: left;
