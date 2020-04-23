@@ -32,7 +32,7 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   /* New scalable text using modular scale
   https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
-  font-size: 1rem;
+  font-size: 100%;
   line-height: 1.5rem;
   color: var(--main-gold);
   text-align: center;
@@ -42,29 +42,29 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 2.4; /* Responsive Vertical Rhythm */
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.45rem;
   line-height: 2.16rem; /* Responsive Vertical Rhythm */
 }
 
 /* Responsive Vertical Rhythm */
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   line-height: 1.92rem;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 h5 {
-  font-size: 1.25rem;
+  font-size: 0.85028rem;
 }
 h6 {
-  font-size: 1.1rem;
+  font-size: 0.78405rem;
 }
 
 /* Responsive Vertical Rhythm */
@@ -255,7 +255,7 @@ img {
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--main-white);
 }
 
