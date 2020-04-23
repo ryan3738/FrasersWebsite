@@ -29,7 +29,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   /* New scalable text using modular scale
   https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
   font-size: 1rem;
@@ -105,9 +105,9 @@ img {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 4em auto 4em;
   grid-template-areas:
-    "h h h h h h h h h h h h"
-    "c c c c c c c c c c c c"
-    "f f f f f f f f f f f f";
+    'h h h h h h h h h h h h'
+    'c c c c c c c c c c c c'
+    'f f f f f f f f f f f f';
 }
 
 .header {
@@ -188,12 +188,12 @@ img {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 120vh repeat(5, auto);
   grid-template-areas:
-    "c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1"
-    "c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2"
-    "c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3"
-    "c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4"
-    "c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5"
-    "c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6";
+    'c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1'
+    'c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2'
+    'c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 c3'
+    'c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4'
+    'c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5'
+    'c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6';
 }
 
 .welcome-container {
@@ -204,16 +204,16 @@ img {
   grid-template-columns: 1vw auto 1vw;
   grid-template-rows: 10vh auto 40vh;
   grid-template-areas:
-    ". . ."
-    ". w ."
-    ". . .";
+    '. . .'
+    '. w .'
+    '. . .';
   /* margin-top: 4em; */
   /* padding: 70px 5px; */
   /* width: 100vw; */
   /* height: 120vh; */
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("images/fr_0276.jpg");
+  background-image: url('images/fr_0276.jpg');
 }
 
 .welcome-box {
@@ -277,14 +277,14 @@ img {
   grid-row: repeat(8, minmax(200px, 500px));
 
   grid-template-areas:
-    "h h h h h h h h h h h h"
-    ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
-    ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
-    ". p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 ."
-    ". t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 ."
-    ". p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 ."
-    ". t3 t3 t3 t3 t3 t3 t3 t3 t3 t3 ."
-    ". p4 p4 p4 p4 p4 p4 p4 p4 p4 p4 .";
+    'h h h h h h h h h h h h'
+    '. p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 .'
+    '. t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 .'
+    '. p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 .'
+    '. t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 .'
+    '. p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 .'
+    '. t3 t3 t3 t3 t3 t3 t3 t3 t3 t3 .'
+    '. p4 p4 p4 p4 p4 p4 p4 p4 p4 p4 .';
 }
 
 .about-header {
@@ -344,7 +344,7 @@ img {
 
 /* remove? */
 
-.menu-section {
+.menu-container {
   align-content: center;
   text-align: center;
   align-items: center;
@@ -353,14 +353,14 @@ img {
   justify-items: center;
 }
 
-.menu-section-header {
+.menu-header {
   display: inline-block;
   max-width: 640px;
   padding: 3rem 0 0;
   /* margin: 0 auto 4rem auto; */
 }
 
-.menu-section-container {
+.menu-section {
   /* max-width: 1200px; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -423,11 +423,11 @@ img {
   grid-template-columns: repeat(12, minmax(25px, 90px));
   grid-row: repeat(8, minmax(200px, 500px));
   grid-template-areas:
-    "h h h h h h h h h h h h"
-    ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
-    ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
-    ". p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 ."
-    ". t3 t3 t3 t3 t3 t3 t3 t3 t3 t3 .";
+    'h h h h h h h h h h h h'
+    '. p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 .'
+    '. t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 .'
+    '. p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 .'
+    '. t3 t3 t3 t3 t3 t3 t3 t3 t3 t3 .';
 }
 
 .contact-header {
@@ -481,20 +481,20 @@ Responsive Rules
 @media (min-width: 460px) {
   .about-container {
     grid-template-areas:
-      "h h h h h h h h h h h h"
-      ". p1 p1 p1 p1 p1 t1 t1 t1 t1 t1 ."
-      ". t2 t2 t2 t2 t2 p2 p2 p2 p2 p2 ."
-      ". p3 p3 p3 p3 p3 t3 t3 t3 t3 t3 ."
-      ". t4 t4 t4 t4 t4 p4 p4 p4 p4 p4 .";
+      'h h h h h h h h h h h h'
+      '. p1 p1 p1 p1 p1 t1 t1 t1 t1 t1 .'
+      '. t2 t2 t2 t2 t2 p2 p2 p2 p2 p2 .'
+      '. p3 p3 p3 p3 p3 t3 t3 t3 t3 t3 .'
+      '. t4 t4 t4 t4 t4 p4 p4 p4 p4 p4 .';
   }
 
   .contact-container {
     grid-template-areas:
-      "h h h h h h h h h h h h"
-      ". p1 p1 p1 p1 p1 t1 t1 t1 t1 t1 ."
-      ". t2 t2 t2 t2 t2 p2 p2 p2 p2 p2 ."
-      ". p3 p3 p3 p3 p3 t3 t3 t3 t3 t3 ."
-      ". t4 t4 t4 t4 t4 p4 p4 p4 p4 p4 .";
+      'h h h h h h h h h h h h'
+      '. p1 p1 p1 p1 p1 t1 t1 t1 t1 t1 .'
+      '. t2 t2 t2 t2 t2 p2 p2 p2 p2 p2 .'
+      '. p3 p3 p3 p3 p3 t3 t3 t3 t3 t3 .'
+      '. t4 t4 t4 t4 t4 p4 p4 p4 p4 p4 .';
   }
 }
 
