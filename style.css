@@ -130,24 +130,11 @@ img {
 }
 
 .nav {
-  /* display: flex;
-  align-content: center;
-  justify-content: space-evenly;
-  position: fixed;
-  flex-wrap: wrap;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--background-1);
-  z-index: 10; */
+
 }
 
 .nav-list {
   padding: 0% 2%;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; */
-  /* align-items: center; */
 }
 
 .nav-link {
@@ -155,32 +142,16 @@ img {
 }
 
 .nav-list .nav-link {
-  /* text-align: center;
-  text-justify: center; */
-  /* display: block;
-  font-size: 1rem;
-  padding: 1em; */
+
 }
 .nav-list img {
-  /* display: block;
-  font-size: 1.0rem; */
-  /* margin: 0.5rem; */
+
 }
 
 .header a:hover {
   background: var(--main-white);
 }
-/* .welcome-background {
-  margin-top: 3.8em;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-  width: 100%;
-  height: 120vh;
-  background-image: url("http://frasersgh.com/images/gallary/fr_0276.jpg");
-} */
+
 .content {
   grid-area: c;
   display: grid;
@@ -211,22 +182,15 @@ img {
   /* padding: 70px 5px; */
   /* width: 100vw; */
   /* height: 120vh; */
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('images/fr_0276.jpg');
+  background-size: cover;  
+  background-image: url('images/Calimari-blue-cheese-sauce.jpg');
+  background-color: var(--background-2);
+
 }
 
 .welcome-box {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-content: center; */
-  /* flex-direction: row; */
-  /* box-sizing: border-box; */
-  /* overflow: hidden; */
-  /* width: auto; */
-  /* height: auto; */
-  /* margin: 2%; */
-  /* max-width: 350px; */
   padding: 10%;
 
   grid-area: w;
