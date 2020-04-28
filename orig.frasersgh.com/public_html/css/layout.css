@@ -10,13 +10,16 @@ body {
 }
 
 button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
   background-color: #bf9e2e;
   border: 2px solid #bf9e2e;
   border-radius: 5px;
   color: #000;
   /* display: block; */
-  padding: 5px;
+  /*padding: 5px;*/
   margin: 20px 0;
   width: 80%;
 }
@@ -25,6 +28,9 @@ button:hover {
   animation-name: background-color;
   animation-duration: 500ms;
   background-color: #bf9d2e81;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 a.one:link {
