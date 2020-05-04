@@ -1,11 +1,10 @@
 :root {
-  --main-gold: #cdbe70;
-  /* old-gold: #b8860b; */
-  --main-header: rgba(0, 0, 0, 0.9);
-  --background-1: #171717;
-  --background-2: #1a1a1a;
-  --main-white: #f0f0f0;
-  --main-text2: ;
+  --color-black: black;
+  --color-darker:#1a1a1af6;
+  --color-dark:#38290B;
+  --color-main:#DAA53C;
+  --color-light:#D4BA98;
+  --color-white: #FFFEFD;
 }
 
 /* Base reset */
@@ -30,14 +29,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  /* New scalable text using modular scale
-  https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
+  color: var(--color-main);
+  background-color: var(--color-black);
   font-size: 100%;
   line-height: 1.5rem;
-  color: var(--main-gold);
   text-align: center;
   text-justify: center;
-  background-color: var(--background-2);
   /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
 }
 
@@ -90,7 +87,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: var(--main-gold);
+  color: var(--color-main);
 }
 
 img {
@@ -111,7 +108,7 @@ img {
 }
 
 .header {
-  background: var(--background-1);
+  background: var(--color-darker);
   grid-area: h;
   position: sticky;
   top: 0;
@@ -119,9 +116,6 @@ img {
   /* grid-gap: 5px; */
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-template-rows: 4em;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   justify-items: center;
 }
 
@@ -129,27 +123,19 @@ img {
   height: 2.5em;
 }
 
-.nav {
-
-}
-
 .nav-list {
   padding: 0% 2%;
+  
 }
 
 .nav-link {
   padding: 1em;
-}
-
-.nav-list .nav-link {
-
-}
-.nav-list img {
-
+  
 }
 
 .header a:hover {
-  background: var(--main-white);
+  background: var(--color-light);
+  color: var(--color-black);
 }
 
 .content {
@@ -167,7 +153,7 @@ img {
     'c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6';
 }
 
-.welcome-container {
+.welcome-container {  
   grid-area: c1;
   display: grid;
   justify-content: center;
@@ -186,35 +172,34 @@ img {
   background-repeat: no-repeat;
   background-size: cover;  
   background-image: url('images/Calimari-blue-cheese-sauce.jpg');
-  background-color: var(--background-2);
+  background-color: var(--color-black);
 
 }
 
 .welcome-box {
   padding: 10%;
-
   grid-area: w;
-  background-color: var(--main-header);
+  background: var(--color-darker);
 }
 .welcome-box div {
   /* box-sizing: border-box; */
-  outline: thin solid var(--main-gold);
+  outline: thin solid var(--color-main);
   /* position: relative;
   right: 30px;
   bottom: 30px; */
   padding: 10%;
   /* margin: 5%; */
-  /* background-color: var(--main-header); */
+  /* background-color: var(--color-darker); */
 }
 .welcome-box div div {
   /* box-sizing: border-box; */
-  /* outline: thin solid var(--main-gold); */
+  /* outline: thin solid var(--color-main); */
   /* position: relative;
   left: 30px;
   top: 30px; */
   padding: 5%;
   /* margin: 0%; */
-  /* background-color: var(--main-header); */
+  /* background-color: var(--color-darker); */
   /* float: left; */
 }
 
@@ -239,7 +224,7 @@ img {
   align-content: center;
   grid-template-columns: 0.25em repeat(10, minmax(10px, 108px)) 0.25em;
   grid-row: repeat(8, minmax(200px, 500px));
-
+  /* background-color: var(--color-darker); */
   grid-template-areas:
     'h h h h h h h h h h h h'
     '. p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 .'
@@ -325,7 +310,8 @@ img {
 }
 
 .menu-section {
-  /* max-width: 1200px; */
+  /* background-color: var(--color-black); */
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
@@ -406,7 +392,7 @@ img {
 .btn {
   display: inline-block;
   padding: 2% 2%;
-  border: thin solid var(--main-gold);
+  border: thin solid var(--color-main);
   border-radius: 5px;
 }
 .contact-details {
@@ -432,11 +418,11 @@ img {
 
 .footer {
   grid-area: f;
-  background-color: var(--main-header);
+  background-color: var(--color-darker);
 }
 
 .light-text {
-  color: var(--main-white);
+  color: var(--color-white);
 }
 /* 
 Responsive Rules
