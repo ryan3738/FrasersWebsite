@@ -212,8 +212,6 @@ button:hover {
   background-color: var(--color-black);
 }
 
-
-
 .welcome-box {
   /* margin-top: 25rem; */
   /* margin-top: 80%; */
@@ -275,7 +273,8 @@ button:hover {
     '. t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 .'
     '. p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 .'
     '. t3 t3 t3 t3 t3 t3 t3 t3 t3 t3 .'
-    '. p4 p4 p4 p4 p4 p4 p4 p4 p4 p4 .';
+    '. p4 p4 p4 p4 p4 p4 p4 p4 p4 p4 .'
+    '. t4 t4 t4 t4 t4 t4 t4 t4 t4 t4 .';
 }
 
 .about-header {
@@ -283,34 +282,44 @@ button:hover {
   padding: 3rem 0 0;
 }
 
-#about-pic {
+#happy-hour-pic {
   grid-area: p1;
 }
 
-#about-text {
+#happy-hour-text {
   grid-area: t1;
 }
 
-#happy-hour-pic {
-  grid-area: p2;
-}
-
-#happy-hour-text {
-  grid-area: t2;
-}
-
 #event-pic {
-  grid-area: p3;
-  padding: 3rem 0 0;
+  grid-area: p2;
+  /* padding: 3rem 0 0; */
 }
 
 #event-text {
-  grid-area: t3;
-  padding: 3rem 0 0;
+  grid-area: t2;
+  /* padding: 3rem 0 0; */
 }
+
+#about-pic {
+  grid-area: p3;
+}
+
+#about-text {
+  grid-area: t3;
+}
+
+#scott-pic {
+  grid-area: p4;
+}
+
+#scott-text {
+  grid-area: t4;
+}
+
 .about-item {
-  margin: 10% 10%;
+  margin: 2% 10%;
   text-align: left;
+  padding-top: 4rem;
   /* margin: 10%; */
   /* display: flex;
   justify-content: center;
@@ -468,6 +477,10 @@ button:hover {
   color: var(--color-white);
 }
 
+/* 
+Responsive Rules
+*/
+
 @media (min-width: 460px) {
   .about-container {
     grid-template-areas:
@@ -486,24 +499,33 @@ button:hover {
       '. p3 p3 p3 p3 p3 t3 t3 t3 t3 t3 .'
       '. t4 t4 t4 t4 t4 p4 p4 p4 p4 p4 .';
   }
-}
-/* 
-Responsive Rules
-*/
-
-/* @media (min-height: 700px) and (min-width: 400px) {
-  .welcome-container{
+  .welcome-container {
     background-image: url('images/calamari-blue-cheese-sauce.jpg');
   }
+}
 
+@media (max-height: 460px){
   .welcome-box {
-    margin-top: auto;
+    /* margin-top: auto; */
     background: yellow;
   }
-  .about-container{
-    margin-top: auto;
+  .welcome-container {
+    grid-template-rows: 100vh auto 5vh;
   }
-} */
+  .about-container {
+    margin-top: 80vh;
+  }
+}
+
+@media (min-height: 460px){
+  .welcome-box {
+    /* margin-top: auto; */
+    background: red;
+  }
+  .welcome-container {
+    grid-template-rows: 10vh auto 30vh;
+  }
+}
 
 /* 
 @media (min-width: 980px) {
