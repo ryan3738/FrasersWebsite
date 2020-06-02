@@ -1,10 +1,10 @@
 :root {
   --color-black: black;
-  --color-darker:#1a1a1af6;
-  --color-dark:#38290B;
-  --color-main:#DAA53C;
-  --color-light:#D4BA98;
-  --color-white: #FFFEFD;
+  --color-darker: #1a1a1af6;
+  --color-dark: #38290b;
+  --color-main: #daa53c;
+  --color-light: #d4ba98;
+  --color-white: #fffefd;
 }
 
 /* Base reset */
@@ -95,6 +95,35 @@ img {
   /* width: auto; */
 }
 
+ul {
+  list-style: none;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: var(--color-main);
+  border: 2px solid var(--color-main);
+  border-radius: 5px;
+  color: var(--color-black);
+  /* display: block; */
+  /*padding: 5px;*/
+  margin: 20px 0;
+  width: 80%;
+}
+
+button:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .main-container {
   height: 100%;
   display: grid;
@@ -125,12 +154,10 @@ img {
 
 .nav-list {
   padding: 0% 2%;
-  
 }
 
 .nav-link {
   padding: 1em;
-  
 }
 
 .header a:hover {
@@ -153,7 +180,7 @@ img {
     'c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6';
 }
 
-.welcome-container {  
+.welcome-container {
   grid-area: c1;
   display: grid;
   justify-content: center;
@@ -170,10 +197,9 @@ img {
   /* height: 120vh; */
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover;
   background-image: url('images/Calimari-blue-cheese-sauce.jpg');
   background-color: var(--color-black);
-
 }
 
 .welcome-box {
@@ -259,10 +285,12 @@ img {
 
 #event-pic {
   grid-area: p3;
+  padding: 3rem 0 0;
 }
 
 #event-text {
   grid-area: t3;
+  padding: 3rem 0 0;
 }
 .about-item {
   margin: 15% 10%;
@@ -291,15 +319,15 @@ img {
   grid-area: c4;
 }
 
-/* remove? */
-
 .menu-container {
-  align-content: center;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  /* align-content: center; */
+  /* text-align: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* justify-items: center; */
   justify-self: center;
-  justify-items: center;
+  width: 100vw;
+  max-width: 1200px;
 }
 
 .menu-header {
@@ -311,13 +339,12 @@ img {
 
 .menu-section {
   /* background-color: var(--color-black); */
-  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
   justify-content: space-around;
   align-content: center;
-  justify-items: center;
+  justify-items: left;
   align-items: top;
   padding: 5%;
 }
