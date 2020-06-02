@@ -1,6 +1,8 @@
 :root {
   --color-black: black;
-  --color-darker: #1a1a1af6;
+  /* Have option for internet explorer without f6*/
+  /* --color-darker: #1a1a1af6; */
+  --color-darker: #1a1a1a;
   --color-dark: #38290b;
   --color-main: #daa53c;
   --color-light: #d4ba98;
@@ -180,7 +182,15 @@ button:hover {
     'c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6';
 }
 
+.welcome-logo {
+  height: 5.5rem;
+  /* padding: 0.5rem; */
+  /* display: block; */
+  margin: auto;
+}
+
 .welcome-container {
+  text-align: center;
   grid-area: c1;
   display: grid;
   justify-content: center;
@@ -230,8 +240,9 @@ button:hover {
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--main-white);
+  text-align: center;
 }
 
 .spaced-text {
@@ -451,9 +462,6 @@ button:hover {
 .light-text {
   color: var(--color-white);
 }
-/* 
-Responsive Rules
-*/
 
 @media (min-width: 460px) {
   .about-container {
@@ -474,6 +482,9 @@ Responsive Rules
       '. t4 t4 t4 t4 t4 p4 p4 p4 p4 p4 .';
   }
 }
+/* 
+Responsive Rules
+*/
 
 /* 
 @media (min-width: 980px) {
