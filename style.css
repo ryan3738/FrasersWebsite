@@ -111,8 +111,8 @@ button {
   border-radius: 5px;
   color: var(--color-black);
   /* display: block; */
-  /*padding: 5px;*/
-  margin: 20px 0;
+  padding: 0 5px;
+  margin: 10px 0;
   width: 80%;
 }
 
@@ -172,7 +172,7 @@ button:hover {
   display: grid;
   /* grid-gap: 0.5em; */
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 120vh repeat(5, auto);
+  grid-template-rows: auto repeat(5, auto);
   grid-template-areas:
     'c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1'
     'c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 c2'
@@ -184,8 +184,6 @@ button:hover {
 
 .welcome-logo {
   height: 5.5rem;
-  /* padding: 0.5rem; */
-  /* display: block; */
   margin: auto;
 }
 
@@ -195,16 +193,12 @@ button:hover {
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 1vw auto 1vw;
-  grid-template-rows: 60vh auto 55vh;
+  grid-template-columns: 2vw auto 2vw;
+  grid-template-rows: 1fr 20fr 1fr;
   grid-template-areas:
     '. . .'
     '. w .'
     '. . .';
-  /* margin-top: 4rem; */
-  /* padding: 70px 5px; */
-  /* width: 100vw; */
-  /* height: 120vh; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -213,32 +207,18 @@ button:hover {
 }
 
 .welcome-box {
-  /* margin-top: 25rem; */
-  /* margin-top: 80%; */
+  width: 300px;
   padding: 10%;
   grid-area: w;
   background: var(--color-darker);
 }
+
 .welcome-box div {
-  /* box-sizing: border-box; */
   outline: thin solid var(--color-main);
-  /* position: relative;
-  right: 30px;
-  bottom: 30px; */
   padding: 10%;
-  /* margin: 5%; */
-  /* background-color: var(--color-darker); */
 }
 .welcome-box div div {
-  /* box-sizing: border-box; */
-  /* outline: thin solid var(--color-main); */
-  /* position: relative;
-  left: 30px;
-  top: 30px; */
   padding: 5%;
-  /* margin: 0%; */
-  /* background-color: var(--color-darker); */
-  /* float: left; */
 }
 
 .title {
@@ -256,9 +236,6 @@ button:hover {
 }
 
 .about-container {
-  /* height: 100%; */
-  /* max-width: 1200px; */
-  /* margin-top: 25rem; */
   display: grid;
   justify-content: center;
   align-content: center;
@@ -292,12 +269,10 @@ button:hover {
 
 #event-pic {
   grid-area: p2;
-  /* padding: 3rem 0 0; */
 }
 
 #event-text {
   grid-area: t2;
-  /* padding: 3rem 0 0; */
 }
 
 #about-pic {
@@ -317,20 +292,12 @@ button:hover {
 }
 
 .about-item {
-  margin: 2% 10%;
+  margin: 0 10% 0;
   text-align: left;
-  padding-top: 4rem;
-  /* margin: 10%; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* text-align: justify;
-  text-justify: justify;
-  align-self: center;
-  justify-self: center; */
 }
 
 .about-item > img {
+  padding-top: 4rem;
   object-fit: cover;
   width: 100%;
   max-height: 100%;
@@ -379,6 +346,16 @@ button:hover {
   padding: 5%;
 }
 
+.gallery-container {
+  margin-top: 2rem;
+  grid-area: c5;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  grid-auto-rows: 120px;
+  grid-auto-flow: dense;
+}
+
 .gallery-container > div {
   display: flex;
   justify-content: center;
@@ -391,15 +368,6 @@ button:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.gallery-container {
-  grid-area: c5;
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-  grid-auto-rows: 120px;
-  grid-auto-flow: dense;
 }
 
 .horizontal {
@@ -439,25 +407,6 @@ button:hover {
 
 .contact-links div {
   padding: 1.5rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 2% 2%;
-  border: thin solid var(--color-main);
-  border-radius: 5px;
-}
-.contact-details {
-  text-shadow: 2px 2px 1px #1f1f1f;
-  transition: transform 0.3s ease-out;
-}
-
-.contact-details:hover {
-  transform: translateY(8px);
-}
-
-.contacts {
-  text-align: center;
 }
 
 #contact-info {
@@ -502,11 +451,17 @@ Responsive Rules
   .welcome-container {
     background-image: url('images/calamari-blue-cheese-sauce.jpg');
   }
+  .about-text {
+    padding-top: 4rem;
+  }
+  .about-item {
+    margin: 5vh 2vw;
+  }
 }
 
-@media (max-height: 460px){
+/* @media (max-height: 460px){
   .welcome-box {
-    /* margin-top: auto; */
+    margin-top: auto;
     background: yellow;
   }
   .welcome-container {
@@ -519,13 +474,13 @@ Responsive Rules
 
 @media (min-height: 460px){
   .welcome-box {
-    /* margin-top: auto; */
+    margin-top: auto;
     background: red;
   }
   .welcome-container {
-    grid-template-rows: 10vh auto 30vh;
+    grid-template-rows: 10vh auto 40vh;
   }
-}
+} */
 
 /* 
 @media (min-width: 980px) {
