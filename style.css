@@ -131,7 +131,7 @@ button:hover {
   display: grid;
   /* grid-gap: 0.5em; */
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 4em auto 4em;
+  grid-template-rows: 4rem auto 4rem;
   grid-template-areas:
     'h h h h h h h h h h h h'
     'c c c c c c c c c c c c'
@@ -150,9 +150,9 @@ button:hover {
   justify-items: center;
 }
 
-.header-logo {
+/* .header-logo {
   height: 2.5em;
-}
+} */
 
 .nav-list {
   padding: 0% 2%;
@@ -196,23 +196,27 @@ button:hover {
   justify-content: center;
   align-content: center;
   grid-template-columns: 1vw auto 1vw;
-  grid-template-rows: 10vh auto 40vh;
+  grid-template-rows: 60vh auto 55vh;
   grid-template-areas:
     '. . .'
     '. w .'
     '. . .';
-  /* margin-top: 4em; */
+  /* margin-top: 4rem; */
   /* padding: 70px 5px; */
   /* width: 100vw; */
   /* height: 120vh; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('images/calamari-blue-cheese-sauce.jpg');
+  background-image: none;
   background-color: var(--color-black);
 }
 
+
+
 .welcome-box {
+  /* margin-top: 25rem; */
+  /* margin-top: 80%; */
   padding: 10%;
   grid-area: w;
   background: var(--color-darker);
@@ -256,6 +260,7 @@ button:hover {
 .about-container {
   /* height: 100%; */
   /* max-width: 1200px; */
+  /* margin-top: 25rem; */
   display: grid;
   justify-content: center;
   align-content: center;
@@ -304,7 +309,7 @@ button:hover {
   padding: 3rem 0 0;
 }
 .about-item {
-  margin: 15% 10%;
+  margin: 10% 10%;
   text-align: left;
   /* margin: 10%; */
   /* display: flex;
@@ -485,6 +490,20 @@ button:hover {
 /* 
 Responsive Rules
 */
+
+/* @media (min-height: 700px) and (min-width: 400px) {
+  .welcome-container{
+    background-image: url('images/calamari-blue-cheese-sauce.jpg');
+  }
+
+  .welcome-box {
+    margin-top: auto;
+    background: yellow;
+  }
+  .about-container{
+    margin-top: auto;
+  }
+} */
 
 /* 
 @media (min-width: 980px) {
