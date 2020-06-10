@@ -131,7 +131,7 @@ button:hover {
   display: grid;
   /* grid-gap: 0.5em; */
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 4rem auto 4rem;
+  grid-template-rows: 4rem auto 5rem;
   grid-template-areas:
     'h h h h h h h h h h h h'
     'c c c c c c c c c c c c'
@@ -160,6 +160,7 @@ button:hover {
 
 .nav-link {
   padding: 1em;
+    margin:auto;
 }
 
 .header a:hover {
