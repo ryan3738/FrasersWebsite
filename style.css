@@ -183,12 +183,6 @@ button:hover {
     'c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6';
 }
 
-.welcome-logo {
-  height: 5rem;
-  margin: auto;
-  display: block;
-}
-
 .welcome-container {
   text-align: center;
   grid-area: c1;
@@ -209,18 +203,26 @@ button:hover {
 }
 
 .welcome-box {
-  width: 300px;
+  width: minmax(240px, auto);
   padding: 10%;
   grid-area: w;
   background: var(--color-darker);
 }
 
-.welcome-box div {
+.welcome-inner-box {
   outline: thin solid var(--color-main);
   padding: 10%;
 }
-.welcome-box div div {
-  padding: 5%;
+
+/* .welcome-contents {
+  margin: 5%;
+} */
+
+.welcome-logo {
+  max-width: 100%;
+  max-height: auto;
+  margin: auto;
+  display: block;
 }
 
 .title {
@@ -336,16 +338,14 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
-  justify-content: space-around;
-  align-content: center;
-  justify-items: left;
-  align-items: top;
   padding: 5%;
 }
 
 .menu-item {
   text-align: left;
+  border-radius: 7px;
   padding: 5%;
+  background: var(--color-darker);
 }
 
 .gallery-container {
