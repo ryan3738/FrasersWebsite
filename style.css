@@ -426,6 +426,10 @@ button:hover {
   color: var(--color-white);
 }
 
+.menu-item-title {
+  color: var(--color-white);
+  text-transform: uppercase;
+}
 /* 
 Responsive Rules
 */
