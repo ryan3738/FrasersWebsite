@@ -160,7 +160,7 @@ button:hover {
 
 .nav-link {
   padding: 1em;
-    margin:auto;
+  margin: auto;
 }
 
 .header a:hover {
@@ -184,8 +184,9 @@ button:hover {
 }
 
 .welcome-logo {
-  height: 5.5rem;
+  height: 5rem;
   margin: auto;
+  display: block;
 }
 
 .welcome-container {
