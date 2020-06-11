@@ -226,13 +226,15 @@ button:hover {
 }
 
 .title {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   color: var(--main-white);
   text-align: center;
+  display: none;
 }
 
 .spaced-text {
   letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #about {
