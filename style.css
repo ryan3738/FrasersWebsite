@@ -394,31 +394,77 @@ button:hover {
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: repeat(12, minmax(25px, 90px));
-  grid-row: repeat(8, minmax(200px, 500px));
-  grid-template-areas:
+  grid-template-columns: repeat(autofill, minmax(200, 500));
+  /* grid-template-rows: repeat(auto, 500px); */
+  /* grid-template-columns: repeat(12, minmax(25px, 90px)); */
+  /* grid-row: repeat(8, minmax(200px, 500px)); */
+  /* grid-template-areas:
     'h h h h h h h h h h h h'
     '. p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 .'
     '. t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 .'
     '. p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 .'
-    '. t3 t3 t3 t3 t3 t3 t3 t3 t3 t3 .';
+    '. t3 t3 t3 t3 t3 t3 t3 t3 t3 t3 .'; */
 }
 
 .contact-header {
-  grid-area: h;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
   padding: 3rem 0 0;
 }
 
 .contact-links div {
   padding: 1.5rem;
+  /* grid-row: 2 / 3; */
 }
 
 #contact-info {
-  grid-area: p1;
+  /* grid-area: p1; */
+  white-space: nowrap;
 }
 
-#facebook {
-  grid-area: t1;
+#social-media {
+  /* grid-area: t1; */
+  display: grid;
+  grid-gap: 5px;
+  align-items: start;
+  justify-items: start;
+  grid-template-columns: 50px, 50px, auto;
+}
+
+.social-header {
+  grid-column: 1 / 4;
+}
+
+.facebook {
+  width: 45px;
+  height: 45px;
+  vertical-align: center;
+  background-color: var(--color-main);
+  border-radius: 5px;
+  grid-column: 1/2;
+  /* margin: 5px; */
+}
+
+.facebook:hover {
+  animation-name: facebook-button;
+  animation-duration: 500ms;
+  background-color: #3b5998;
+}
+
+.instagram {
+  width: 45px;
+  height: 45px;
+  vertical-align: center;
+  background-color: var(--color-main);
+  border-radius: 5px;
+  grid-column: 2/3;
+  /* margin: 5px; */
+}
+
+.instagram:hover {
+  animation-name: instagram-button;
+  animation-duration: 500ms;
+  background-color: #fb3958;
 }
 
 .footer {
@@ -449,12 +495,12 @@ Responsive Rules
   }
 
   .contact-container {
-    grid-template-areas:
+    /* grid-template-areas:
       'h h h h h h h h h h h h'
       '. p1 p1 p1 p1 p1 t1 t1 t1 t1 t1 .'
       '. t2 t2 t2 t2 t2 p2 p2 p2 p2 p2 .'
       '. p3 p3 p3 p3 p3 t3 t3 t3 t3 t3 .'
-      '. t4 t4 t4 t4 t4 p4 p4 p4 p4 p4 .';
+      '. t4 t4 t4 t4 t4 p4 p4 p4 p4 p4 .'; */
   }
   .welcome-container {
     background-image: url('images/calamari-blue-cheese-sauce.jpg');
