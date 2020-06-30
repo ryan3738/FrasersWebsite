@@ -408,7 +408,7 @@ button:hover {
 
 #contact-info {
   white-space: nowrap;
-  margin: 5px;
+  margin: 10px;
 }
 
 .social-media-container {
@@ -416,7 +416,7 @@ button:hover {
   flex-direction: column;
   justify-content: flex-start;
   /* align-items: flex-start; */
-  margin: 5px;
+  margin: 10px;
 }
 
 .social-media-contents {
