@@ -6,6 +6,10 @@ webhook_url:
 sections:
 - type: heading
   label: Menu Items
+- type: document
+  path: ".forestry/front_matter/templates/menu-items.yml"
+  label: Menu Item
+  match: "**/*"
 - type: heading
   label: Content
 upload_dir: images
