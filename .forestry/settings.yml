@@ -9,6 +9,8 @@ sections:
   label: Menu Item
   create: all
   match: "**/*"
+  templates:
+  - menu-items
 - type: heading
   label: Menu Items
 - type: heading
