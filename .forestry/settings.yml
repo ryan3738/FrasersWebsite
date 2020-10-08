@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: ".forestry/front_matter/templates/menu-items.yml"
+  path: ".forestry/front_matter/templates"
   label: Menu Item
   create: all
   match: "**/*"

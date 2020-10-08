@@ -44,3 +44,5 @@ fields:
     min: 
     max: 
     step: 
+pages:
+- ".forestry/front_matter/templates/menu-items.yml/Shrimp Dish.html"
