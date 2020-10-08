@@ -1,4 +1,36 @@
 ---
 label: Menu Items
 hide_body: false
-fields: []
+fields:
+- name: menu_item_title
+  type: text
+  config:
+    required: false
+  label: Menu Item Title
+  description: A title for the menu item.
+- name: menu_item_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Menu Item Description
+  description: A description of the menu item.
+- name: menu_item_category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Entree
+    - Starter
+    - Dessert
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Menu Item Category
+  description: Please select the category for this menu item.
