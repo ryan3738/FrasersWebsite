@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Content
 - type: directory
   path: ".forestry/front_matter/templates/menu-items.yml"
   label: Menu Item
@@ -11,10 +13,6 @@ sections:
   match: "**/*"
   templates:
   - menu-items
-- type: heading
-  label: Menu Items
-- type: heading
-  label: Content
 upload_dir: images
 public_path: "/images"
 front_matter_path: ''
