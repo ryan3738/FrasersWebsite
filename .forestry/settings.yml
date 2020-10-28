@@ -3,7 +3,16 @@ new_page_extension: html
 auto_deploy: false
 admin_path: ''
 webhook_url: 
-sections: 
+sections:
+- type: heading
+  label: Content
+- type: directory
+  path: ".forestry/front_matter/templates"
+  label: Menu Item
+  create: all
+  match: "**/*"
+  templates:
+  - menu-items
 upload_dir: images
 public_path: "/images"
 front_matter_path: ''
