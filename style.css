@@ -182,6 +182,10 @@ button:hover {
     'c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4'
     'c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5'
     'c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6';
+    /* cant replace grid with flex column */
+    /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
 
 .welcome-container {
