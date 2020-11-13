@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.45rem;
+  font-size: 1.65rem;
   line-height: 2.16rem; /* Responsive Vertical Rhythm */
 }
 
@@ -91,6 +91,7 @@ a {
   text-decoration: none;
   color: var(--color-main);
   min-height: 48px;
+  font-size: 1rem;
 }
 
 img {
