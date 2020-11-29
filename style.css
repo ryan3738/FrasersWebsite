@@ -1,12 +1,12 @@
 :root {
-  --color-black: black;
+  --color-black: #0b0a0a;
   /* Have option for internet explorer without f6*/
   /* --color-darker: #1a1a1af6; */
   --color-darker: #1a1a1a;
   --color-dark: #38290b;
-  --color-main: #daa53c;
+  --color-main: #c6a938;
   --color-light: #d4ba98;
-  --color-white: #fffefd;
+  --color-white: #ffffffde;
 }
 
 /* Base reset */
@@ -31,7 +31,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  color: var(--color-main);
+  color: var(--color-white);
   background-color: var(--color-black);
   font-size: 100%;
   line-height: 1.5rem;
@@ -82,6 +82,7 @@ h4,
 h5,
 h6 {
   margin: 1rem 0;
+  color: var(--color-main);
 }
 /* ul {
   list-style: none;/
@@ -113,9 +114,10 @@ button {
   border-radius: 5px;
   color: var(--color-black);
   /* display: block; */
-  padding: 0 5px;
+  padding: 20px;
   margin: 10px 0;
   width: 80%;
+  white-space: nowrap;
 }
 
 button:hover {
@@ -183,8 +185,8 @@ button:hover {
     'c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 c4'
     'c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5'
     'c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 c6';
-    /* cant replace grid with flex column */
-    /* display: flex;
+  /* cant replace grid with flex column */
+  /* display: flex;
   flex-direction: column;
   align-items: center; */
 }
@@ -227,6 +229,7 @@ button:hover {
 .welcome-logo {
   max-width: 100%;
   max-height: auto;
+  width: 240px;
   margin: auto;
   display: block;
 }
@@ -239,7 +242,7 @@ button:hover {
 }
 
 .spaced-text {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
   margin-bottom: 1rem;
 }
 
@@ -275,16 +278,16 @@ button:hover {
   padding: 3rem 0 0;
 }
 
-#about0left{
+#about0left {
   grid-area: l0;
 }
-#about0right{
+#about0right {
   grid-area: r0;
 }
-#about1left{
+#about1left {
   grid-area: p0;
 }
-#about1right{
+#about1right {
   grid-area: t0;
 }
 
@@ -349,6 +352,7 @@ button:hover {
   justify-self: center;
   width: 100vw;
   max-width: 1200px;
+  display: none;  
 }
 
 .menu-header {
@@ -424,9 +428,10 @@ button:hover {
 
 .contact-content {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
+  /* flex-flow: row wrap; */
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #contact-info {
