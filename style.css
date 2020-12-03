@@ -242,7 +242,7 @@ button:hover {
 }
 
 .spaced-text {
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
   margin-bottom: 1rem;
 }
 
@@ -352,7 +352,7 @@ button:hover {
   justify-self: center;
   width: 100vw;
   max-width: 1200px;
-  display: none;  
+  display: none;
 }
 
 .menu-header {
