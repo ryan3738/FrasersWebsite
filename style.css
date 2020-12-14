@@ -192,11 +192,12 @@ button:hover {
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  /* height: 100%; */
 }
 
 .welcome-container {
-  text-align: center;
-  grid-area: c1;
+  /* grid-area: c1; */
+  /* text-align: center;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -205,25 +206,38 @@ button:hover {
   grid-template-areas:
     '. . .'
     '. w .'
-    '. . .';
+    '. . .'; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: none;
   background-color: var(--surface-color);
+  min-height: 90vh;
   width: 100vw;
+  height: auto;
+  /* margin: 0; */
+  /* height: auto; */
 }
 
 .welcome-box {
   width: minmax(240px, auto);
-  padding: 10%;
+  padding: 30px;
+  margin: 5%;
   grid-area: w;
   background: var(--color-darker);
+  /* height: auto; */
+  /* width: auto; */
 }
 
 .welcome-inner-box {
   outline: thin solid var(--primary-color-desaturated);
   padding: 10%;
+  /* height: auto; */
+  /* width: auto; */
 }
 
 /* .welcome-contents {
@@ -257,6 +271,7 @@ button:hover {
 .about-container {
   background-color: var(--surface-color);
   max-width: 1200px;
+  /* height: 100%; */
   display: grid;
   justify-content: center;
   align-content: center;
@@ -278,6 +293,8 @@ button:hover {
     '. p4 p4 p4 p4 p4 p4 p4 p4 p4 p4 .'
     '. t4 t4 t4 t4 t4 t4 t4 t4 t4 t4 .';
   padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin: 100px;
 }
 
 .about-header {
